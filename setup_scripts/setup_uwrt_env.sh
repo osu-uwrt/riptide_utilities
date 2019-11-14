@@ -2,7 +2,7 @@
 
 # Setup ~/.bashrc file
 sh setup_bashrc.sh
- 
+
 # Add user to group 'uwrt' for sensor permissions
 ~/osu-uwrt/riptide_software/src/riptide_hardware/scripts/add_rule
 
