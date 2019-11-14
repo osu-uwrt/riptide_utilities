@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Eigen
 eigen_version="3.3.7"

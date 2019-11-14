@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Ceres
 ceres_version="ceres-solver-1.14.0"
