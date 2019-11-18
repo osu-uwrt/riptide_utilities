@@ -14,7 +14,4 @@ cd ..
 
 rosdep install --from-paths src --ignore-src --rosdistro kinetic -y -r
 
-source /opt/ros/kinetic/setup.bash
-catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic install
-
-rm -rf osu-uwrt/dependencies
+sudo bash -c "source /opt/ros/kinetic/setup.bash; catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/melodic install"
