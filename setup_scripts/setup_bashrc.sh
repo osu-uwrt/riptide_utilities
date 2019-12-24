@@ -2,7 +2,7 @@
 
 # Update ~/.bashrc File
 
-s1="source /opt/ros/kinetic/setup.bash"
+s1="source /opt/ros/$ROS_DISTRO/setup.bash"
 s2="source ~/osu-uwrt/riptide_software/devel/setup.bash"
 
 
