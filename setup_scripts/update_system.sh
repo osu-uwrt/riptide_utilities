@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ./install_ros.sh
+source /opt/ros/$ROS_DISTRO/setup.bash
 ./install_rosdeps.sh
 if [ $ROS_DISTRO == "melodic" ]; then
     printf "\n\nPlease ensure flycaptue is installed from this repo: https://github.com/Juched/flycap-mirror\n\n\n"
