@@ -10,6 +10,7 @@ if type lsb_release >/dev/null 2>&1; then
         echo "Linux version not recognized"
         exit
     fi
+    export ROS_DISTRO
     echo "Installing ros $ROS_DISTRO..."
     wget https://raw.githubusercontent.com/PickNikRobotics/quick-ros-install/master/ros_install.sh && chmod 755 ros_install.sh && ./ros_install.sh $ROS_DISTRO
     exit
