@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source install_ros.sh
+export ROS_DISTRO
 source /opt/ros/$ROS_DISTRO/setup.bash
 ./install_rosdeps.sh
 source /opt/ros/$ROS_DISTRO/setup.bash
