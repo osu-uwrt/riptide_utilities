@@ -1,19 +1,22 @@
 #!/bin/bash
 
-if [ -z "$ROS_DISTRO" ] && type lsb_release >/dev/null 2>&1; then
-    VER=$(lsb_release -sr)
-    if [ $VER == "18.04" ]; then
-        ROS_DISTRO="melodic"
-    elif [ $VER == "16.04" ]; then
-        ROS_DISTRO="kinetic"
+if [ -z "$ROS_DISTRO" ]; then
+    if type lsb_release >/dev/null 2>&1; then
+        VER=$(lsb_release -sr)
+        if [ $VER == "18.04" ]; then
+            ROS_DISTRO="melodic"
+        elif [ $VER == "16.04" ]; then
+            ROS_DISTRO="kinetic"
+        else
+            echo "Linux version not recognized"
+            exit
+        fi
+        echo "Ros distribution $ROS_DISTRO selected"
+        export ROS_DISTRO
     else
-        echo "Linux version not recognized"
+        echo "Linux distro not recognized"
         exit
     fi
-    export ROS_DISTRO
-else
-    echo "Linux distro not recognized"
-    exit
 fi
 
 ./install_ros.sh
