@@ -7,5 +7,5 @@
 #rsync -tvrz ~/osu-uwrt/riptide_software/src/riptide_utilities ros@jetson:~/osu-uwrt/riptide_software/src
 
 ~/osu-uwrt/riptide_software/src/riptide_utilities/xfer-jetson.sh
-ssh ros@jetson 'cd ~/osu-uwrt/riptide_software && source /opt/ros/kinetic/setup.bash && catkin build && source ~/osu-uwrt/riptide_software/devel/setup.bash'
+ssh ros@jetson 'bash -ic "cd ~/osu-uwrt/riptide_software && catkin build"'
 ssh ros@jetson 'chmod 700 ~/osu-uwrt/riptide_software/src/riptide_utilities/*'
