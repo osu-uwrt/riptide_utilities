@@ -19,17 +19,38 @@ if [ -z "$ROS_DISTRO" ]; then
     fi
 fi
 
+# Install ros and dependencies
 ./install_ros.sh
 source /opt/ros/$ROS_DISTRO/setup.bash
 ./install_rosdeps.sh
 source /opt/ros/$ROS_DISTRO/setup.bash
+
+# Install Point grey drivers, on melodic its a custom ros package
 if [ $ROS_DISTRO == "melodic" ]; then
     printf "\n\nPlease ensure flycaptue is installed from this repo: https://github.com/Juched/flycap-mirror\n\n\n"
     read -p "Press enter to continue"
 else
     ./install_point_grey_drivers.sh
 fi
+
+# Install all custon ros packages
 ./install_custom_ros_packages.sh
+source ~/osu-uwrt/dependencies/install/setup.bash
+
+# Install Ceres and Eigen
 sudo ./install_ceres.sh
 sudo ./install_eigen.sh
-./setup_uwrt_env.sh
+
+# Setup ~/.bashrc file
+./setup_bashrc.sh
+
+# Add user to group 'uwrt' for sensor permissions
+sudo ~/osu-uwrt/riptide_software/src/puddles_hardware/scripts/add_rule
+
+# Compile Code
+cd ~/osu-uwrt/riptide_software
+catkin clean -y
+catkin build
+
+echo "If no errors occurred during compilation, then everything was setup correctly"
+echo "Please reboot your computer for final changes to take effect"

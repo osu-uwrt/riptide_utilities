@@ -17,4 +17,5 @@ cd ..
 
 rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y -r
 
-sudo bash -c "source /opt/ros/$ROS_DISTRO/setup.bash; catkin_make -DCMAKE_INSTALL_PREFIX=/opt/ros/$ROS_DISTRO install"
+catkin config --install --extend /opt/ros/$ROS_DISTRO --cmake-args -DCMAKE_BUILD_TYPE=Release
+catkin build
