@@ -46,8 +46,10 @@ source ~/osu-uwrt/dependencies/install/setup.bash
 sudo ./install_ceres.sh
 sudo ./install_eigen.sh
 
-# Setup ~/.bashrc file
+# Setup ~/.bashrc and vscode
 ./setup_bashrc.sh
+./setup_vscode.sh
+./setup_hosts.sh
 
 # Add user to group 'uwrt' for sensor permissions
 sudo ~/osu-uwrt/riptide_software/src/puddles_hardware/scripts/add_rule

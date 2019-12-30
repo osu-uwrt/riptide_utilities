@@ -13,37 +13,37 @@
         {
             "label": "make_baycat",
             "type": "shell",
-            "command": "../src/riptide_utilities/make-baycat.sh",
+            "command": "../src/riptide_utilities/make.sh baycat",
             "problemMatcher": []
         },
         {
             "label": "make_riptide",
             "type": "shell",
-            "command": "../src/riptide_utilities/make-riptide.sh",
+            "command": "../src/riptide_utilities/make.sh riptide",
             "problemMatcher": []
         },
         {
             "label": "make_jetson",
             "type": "shell",
-            "command": "../src/riptide_utilities/make-jetson.sh",
+            "command": "../src/riptide_utilities/make.sh jetson",
             "problemMatcher": []
         },
         {
             "label": "xfer_baycat",
             "type": "shell",
-            "command": "../src/riptide_utilities/xfer-baycat.sh",
+            "command": "../src/riptide_utilities/xfer.sh baycat",
             "problemMatcher": []
         },
         {
             "label": "xfer_riptide",
             "type": "shell",
-            "command": "../src/riptide_utilities/xfer-riptide.sh",
+            "command": "../src/riptide_utilities/xfer.sh riptide",
             "problemMatcher": []
         },
         {
             "label": "xfer_jetson",
             "type": "shell",
-            "command": "../src/riptide_utilities/xfer-jetson.sh",
+            "command": "../src/riptide_utilities/xfer.sh jetson",
             "problemMatcher": []
         },
         {
@@ -67,25 +67,25 @@
         {
             "label": "baycat_gui",
             "type": "shell",
-            "command": "../src/riptide_utilities/gui/baycat-gui.sh",
+            "command": "../src/riptide_utilities/gui/gui.sh baycat",
             "problemMatcher": []
         },
         {
             "label": "riptide_gui",
             "type": "shell",
-            "command": "../src/riptide_utilities/gui/riptide-gui.sh",
+            "command": "../src/riptide_utilities/gui/gui.sh riptide",
             "problemMatcher": []
         },
         {
             "label": "jetson_gui",
             "type": "shell",
-            "command": "../src/riptide_utilities/gui/jetson-gui.sh",
+            "command": "../src/riptide_utilities/gui/gui.sh jetson",
             "problemMatcher": []
         },
         {
             "label": "mega_computer_gui",
             "type": "shell",
-            "command": "../src/riptide_utilities/gui/mega-computer-gui.sh",
+            "command": "../src/riptide_utilities/gui/gui.sh mega-computer",
             "problemMatcher": []
         }
     ]
