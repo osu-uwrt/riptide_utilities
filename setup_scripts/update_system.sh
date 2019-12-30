@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $UID = 0 ]] ; then
+  echo "Please dont use sudo command with script"
+  exit
+fi
+
 if [ -z "$ROS_DISTRO" ]; then
     if type lsb_release >/dev/null 2>&1; then
         VER=$(lsb_release -sr)
