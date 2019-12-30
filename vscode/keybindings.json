@@ -38,5 +38,10 @@
         "key": "ctrl+alt+shift+l",
         "command": "workbench.action.tasks.runTask",
         "args": "local_gui"
+    },
+    {
+        "key": "ctrl+alt+shift+m",
+        "command": "workbench.action.tasks.runTask",
+        "args": "mega_computer_gui"
     }
 ]
