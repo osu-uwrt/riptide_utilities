@@ -4,7 +4,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "catkin build",
+            "command": "cd .. && catkin build",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -13,73 +13,79 @@
         {
             "label": "make_baycat",
             "type": "shell",
-            "command": "./src/riptide_utilities/make-baycat.sh",
+            "command": "../src/riptide_utilities/make-baycat.sh",
             "problemMatcher": []
         },
         {
             "label": "make_riptide",
             "type": "shell",
-            "command": "./src/riptide_utilities/make-riptide.sh",
+            "command": "../src/riptide_utilities/make-riptide.sh",
             "problemMatcher": []
         },
         {
             "label": "make_jetson",
             "type": "shell",
-            "command": "./src/riptide_utilities/make-jetson.sh",
+            "command": "../src/riptide_utilities/make-jetson.sh",
             "problemMatcher": []
         },
         {
             "label": "xfer_baycat",
             "type": "shell",
-            "command": "./src/riptide_utilities/xfer-baycat.sh",
+            "command": "../src/riptide_utilities/xfer-baycat.sh",
             "problemMatcher": []
         },
         {
             "label": "xfer_riptide",
             "type": "shell",
-            "command": "./src/riptide_utilities/xfer-riptide.sh",
+            "command": "../src/riptide_utilities/xfer-riptide.sh",
             "problemMatcher": []
         },
         {
             "label": "xfer_jetson",
             "type": "shell",
-            "command": "./src/riptide_utilities/xfer-jetson.sh",
+            "command": "../src/riptide_utilities/xfer-jetson.sh",
             "problemMatcher": []
         },
         {
             "label": "shutdown_all",
             "type": "shell",
-            "command": "./src/riptide_utilities/shutdown_scripts/shutdown_all.sh",
+            "command": "../src/riptide_utilities/shutdown_scripts/shutdown_all.sh",
             "problemMatcher": []
         },
         {
             "label": "reboot_all",
             "type": "shell",
-            "command": "./src/riptide_utilities/shutdown_scripts/reboot_all.sh",
+            "command": "../src/riptide_utilities/shutdown_scripts/reboot_all.sh",
             "problemMatcher": []
         },
         {
             "label": "local_gui",
             "type": "shell",
-            "command": "./src/riptide_utilities/gui/local-gui.sh",
+            "command": "../src/riptide_utilities/gui/local-gui.sh",
             "problemMatcher": []
         },
         {
             "label": "baycat_gui",
             "type": "shell",
-            "command": "./src/riptide_utilities/gui/baycat-gui.sh",
+            "command": "../src/riptide_utilities/gui/baycat-gui.sh",
             "problemMatcher": []
         },
         {
             "label": "riptide_gui",
             "type": "shell",
-            "command": "./src/riptide_utilities/gui/riptide-gui.sh",
+            "command": "../src/riptide_utilities/gui/riptide-gui.sh",
             "problemMatcher": []
         },
         {
             "label": "jetson_gui",
             "type": "shell",
-            "command": "./src/riptide_utilities/gui/jetson-gui.sh",
+            "command": "../src/riptide_utilities/gui/jetson-gui.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "mega_computer_gui",
+            "type": "shell",
+            "command": "../src/riptide_utilities/gui/mega-computer-gui.sh",
             "problemMatcher": []
         }
     ]
