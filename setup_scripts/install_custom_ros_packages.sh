@@ -8,11 +8,11 @@ mkdir src
 cd src
 
 if [ $ROS_DISTRO == "melodic" ]; then
-    git clone https://github.com/ros-drivers/pointgrey_camera_driver.git
+    git -C pointgrey_camera_driver pull || git clone https://github.com/ros-drivers/pointgrey_camera_driver.git
 fi
-git clone https://github.com/osu-uwrt/imu_3dm_gx4.git
-git clone --recursive https://github.com/osu-uwrt/darknet_ros.git
-git clone https://github.com/osu-uwrt/nortek_dvl.git
+git -C imu_3dm_gx4 pull || git clone https://github.com/osu-uwrt/imu_3dm_gx4.git
+git -C darknet_ros pull --recurse-submodules || git clone --recursive https://github.com/osu-uwrt/darknet_ros.git
+git -C nortek_dvl pull || git clone https://github.com/osu-uwrt/nortek_dvl.git
 cd ..
 
 rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y -r
