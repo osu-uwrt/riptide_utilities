@@ -87,6 +87,12 @@
             "type": "shell",
             "command": "../src/riptide_utilities/gui/gui.sh mega-computer",
             "problemMatcher": []
+        },
+        {
+            "label": "update_system",
+            "type": "shell",
+            "command": "cd ../src/riptide_utilities/setup_scripts && ./update_system.sh",
+            "problemMatcher": []
         }
     ]
 }
