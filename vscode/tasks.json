@@ -85,7 +85,7 @@
         {
             "label": "mega_computer_gui",
             "type": "shell",
-            "command": "../src/riptide_utilities/gui/gui.sh mega-computer",
+            "command": "../src/riptide_utilities/gui/mega-computer-gui.sh",
             "problemMatcher": []
         },
         {

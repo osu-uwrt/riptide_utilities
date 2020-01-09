@@ -3,6 +3,6 @@
 
 export ROS_MASTER_URI=http://$HOSTNAME:11311
 roscore &
-rosrun rqt_gui rqt_gui
+rqt
 
 
